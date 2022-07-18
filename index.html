@@ -1,14 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css/normalize.css">
-  <link rel="stylesheet" href="./css/main.css">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css/normalize.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
 
-</body>
+      table {
+        border: 3px solid black;
+        margin: 0 auto;
+        margin-top: 150px;
+        font-size: 24px;
+        line-height: 26px;
+        border-collapse: collapse;
+      }
+
+      tr,
+      th,
+      td {
+        padding: 20px 40px;
+        border: 2px solid black;
+        text-align: center;
+      }
+    </style>
+    <title>Table</title>
+  </head>
+  <body>
+    <table border="2">
+      <thead>
+        <tr>
+          <th rowspan="2">N</th>
+          <th rowspan="2">client</th>
+          <th rowspan="2">product</th>
+          <th rowspan="2">status</th>
+          <th colspan="2">umumiy harajatlar</th>
+        </tr>
+        <tr>
+          <th>Xizmat harajatlari</th>
+          <th>Yo'l harakati</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Ibrohim Ali</td>
+          <td>Gilam</td>
+          <td>Yuvishda</td>
+          <td>300.000</td>
+          <td>14.000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Rashidova Sayyora</td>
+          <td>Gilam</td>
+          <td>Yuvishda</td>
+          <td>300.000</td>
+          <td>14.000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Agzam Bahromov</td>
+          <td>Gilam</td>
+          <td>Yuvishda</td>
+          <td>300.000</td>
+          <td>14.000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Hidoyatov Abror</td>
+          <td>Gilam</td>
+          <td>Yuvishda</td>
+          <td>300.000</td>
+          <td>14.000</td>
+        </tr>
+        <tr>
+          <td colspan="4">Jammi bo'lib</td>
+          <td colspan="2">1.000.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
